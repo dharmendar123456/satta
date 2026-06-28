@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600&display=swap');
+
+body {
+  font-family: 'Hind', Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+#logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-container h1 {
+  color: #FF5252;
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.site-intro {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.top-nav {
+  text-align: center;
+  margin: 15px 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+
+.top-nav a:hover {
+  color: #FF5252;
+}
+
+.update-time {
+  text-align: center;
+  color: #339966;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.quick-result-board {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.quick-result-board th, .quick-result-board td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+}
+
+.board-title h1 {
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.board-head h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #e9e9e9;
+  padding: 5px;
+}
+
+.board-section td {
+  background-color: #F1F1F1;
+  color: #FF5252;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left;
+  border-left: 8px solid #FF5252;
+}
+
+.game-result td {
+  vertical-align: middle;
+}
+
+.game-result:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.game-result:hover {
+  background-color: #ffffcc;
+}
+
+.game-details h3 {
+  margin: 2px 0;
+}
+
+.game-name {
+  color: #b00;
+  font-size: 1.1rem;
+}
+
+.game-time {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.game-link a {
+  font-size: 0.85rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.game-link a:hover {
+  text-decoration: underline;
+}
+
+.yesterday-number h3, .today-number h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.today-number h3 {
+  color: #FF5252; /* highlight today */
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding: 20px 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-nav {
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.95rem;
+}
+
+.footer-nav a:hover {
+  color: #FF5252;
+  text-decoration: underline;
+}
+
+.footer-content h2 {
+  font-size: 1.3rem;
+  margin: 5px 0;
+  color: #FF5252;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.footer-disclaimer {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.footer-disclaimer strong {
+  color: #FF5252;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  .logo-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .site-intro {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  
+  .top-nav a, .footer-nav a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.95rem;
+  }
+  
+  /* Allow the table to scroll horizontally on small screens */
+  .main-content {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .quick-result-board th, .quick-result-board td {
+    padding: 4px;
+  }
+  
+  .board-title h1 {
+    font-size: 1.1rem;
+  }
+  
+  .board-head h2 {
+    font-size: 0.9rem;
+  }
+  
+  .board-section td {
+    font-size: 1rem;
+    border-left: 5px solid #FF5252;
+  }
+  
+  .game-name {
+    font-size: 0.95rem;
+  }
+  
+  .game-time {
+    font-size: 0.75rem;
+  }
+  
+  .yesterday-number h3, .today-number h3 {
+    font-size: 1.3rem;
+  }
+}
